@@ -79,4 +79,4 @@ echo "环境配置完成！"
 echo "=============================="
 
 echo "启动项目请运行："
-echo "./run.sh"
+echo "./start_all.sh"
