@@ -16,12 +16,24 @@ then
     sudo apt install -y nodejs
 fi
 
+# 安装 concurrently (全局安装)
+echo "安装 concurrently..."
+if ! command -v concurrently &> /dev/null
+then
+    sudo npm install -g concurrently
+fi
+
 # 安装 MongoDB
 echo "安装 MongoDB..."
 if ! command -v mongod &> /dev/null
 then
     sudo apt install -y mongodb
 fi
+
+# 启动并设置 MongoDB 开机自启
+echo "启动 MongoDB 服务..."
+sudo systemctl enable mongod || sudo systemctl enable mongodb
+sudo systemctl start mongod || sudo systemctl start mongodb
 
 # 安装 IPFS
 echo "安装 IPFS..."
