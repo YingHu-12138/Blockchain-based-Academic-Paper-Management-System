@@ -1,0 +1,4 @@
+xiyuan_smart_contract/reports/*.pdf filter=lfs diff=lfs merge=lfs -text
+xiyuan_smart_contract/binaries/*.bin filter=lfs diff=lfs merge=lfs -text
+xiyuan_backend/datasets/*.csv filter=lfs diff=lfs merge=lfs -text
+xiyuan_backend/media/*.mp4 filter=lfs diff=lfs merge=lfs -text

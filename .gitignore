@@ -1,0 +1,146 @@
+# Windows 生成的 Zone.Identifier 文件（非常重要！）
+*:Zone.Identifier
+
+# Python 缓存（BERT 服务会产生）
+__pycache__/
+*.pyc
+
+# Python 虚拟环境（如果使用）
+venv/
+.venv/
+env/
+
+# ZKP 中间文件（circom 编译、可信设置产物）
+*.ptau
+*.r1cs
+*.sym
+*.wasm
+*.zkey
+
+# 根目录下的 circom 构建目录
+identity_js/
+# =================================
+# 通用忽略规则
+# =================================
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-*
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =================================
+# 后端项目 (xiyuan_backend)
+# =================================
+
+# Node.js依赖
+xiyuan_backend/node_modules/
+
+# 环境变量文件
+xiyuan_backend/.env
+xiyuan_backend/.env.*
+!.env.example
+
+# 上传的文件
+xiyuan_backend/uploads/
+
+# 空目录（不需要上传）
+xiyuan_backend/contracts/
+xiyuan_backend/scripts/
+
+# 构建输出
+xiyuan_backend/dist/
+xiyuan_backend/build/
+
+# =================================
+# 前端项目 (xiyuan_frontend)
+# =================================
+
+# Node.js依赖
+xiyuan_frontend/node_modules/
+
+# 环境变量
+xiyuan_frontend/.env
+xiyuan_frontend/.env.*
+!.env.example
+
+# 构建输出
+xiyuan_frontend/dist/
+xiyuan_frontend/build/
+
+# Vite缓存
+xiyuan_frontend/.vite/
+
+# TypeScript构建输出
+xiyuan_frontend/*.tsbuildinfo
+
+# =================================
+# 智能合约项目 (xiyuan_smart_contract)
+# =================================
+
+# Node.js依赖
+xiyuan_smart_contract/node_modules/
+
+# Hardhat缓存和构建输出
+xiyuan_smart_contract/cache/
+xiyuan_smart_contract/artifacts/
+xiyuan_smart_contract/ignition/
+
+# 环境变量
+xiyuan_smart_contract/.env
+xiyuan_smart_contract/.env.*
+!.env.example
+
+# TypeScript构建输出
+xiyuan_smart_contract/*.tsbuildinfo
+
+# =================================
+# 其他通用忽略
+# =================================
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+
+# 代码覆盖率
+coverage/
+.nyc_output/
+
+# 依赖检查
+.yarn-integrity
+.node_repl_history
