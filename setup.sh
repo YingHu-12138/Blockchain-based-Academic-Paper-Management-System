@@ -63,6 +63,7 @@ echo "=============================="
 echo "安装 Hardhat 依赖..."
 cd xiyuan_smart_contract
 npm install
+npx hardhat compile
 cd ..
 
 # 后端
